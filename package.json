@@ -1,0 +1,36 @@
+{
+  "name": "appiumsample",
+  "version": "1.0.0",
+  "description": "Appium sample project in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peter-Nagy/appiumSample.git"
+  },
+  "keywords": [
+    "appium",
+    "sample",
+    "android",
+    "ios",
+    "test",
+    "testing",
+    "node",
+    "nodejs"
+  ],
+  "author": "Péter Szabolcs Nagy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Peter-Nagy/appiumSample/issues"
+  },
+  "homepage": "https://github.com/Peter-Nagy/appiumSample#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^4.0.1",
+    "wd": "^1.4.1",
+    "wd-bridge": "0.0.2"
+  }
+}
