@@ -4,7 +4,7 @@
   "description": "Appium sample project in Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:android": "mocha ./tests --recursive --timeout 300000"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,8 @@
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "mocha": "^4.0.1",
+    "q": "^1.5.1",
+    "underscore": "^1.8.3",
     "wd": "^1.4.1",
     "wd-bridge": "0.0.2"
   }
