@@ -13,8 +13,15 @@ class Connection {
     this.driver = wd.promiseChainRemote(serverConfig);
     logger.configure(this.driver);
 
-    const desired = _.clone(caps.android);
-    desired.app = 'http://127.0.0.1:4000/app.apk';
+    let desired;
+
+    if(process.env.PLATFORM === 'ios') {
+      desired = _.clone(caps.ios);
+      desired.app = 'http://127.0.0.1:4000/app.zip';
+    } else {
+      desired = _.clone(caps.android);
+      desired.app = 'http://127.0.0.1:4000/app.apk';
+    }
     return this.driver
       .init(desired)
       .setImplicitWaitTimeout(3000);

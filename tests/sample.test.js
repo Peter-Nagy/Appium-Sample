@@ -1,12 +1,7 @@
 require('chai').should();
 const withDriver = require('../helpers/utils');
 
-const elements = {
-    leftTextField: 'leftEditText',
-    rightTextField: 'rightEditText',
-    addButton: 'addButton',
-    resultLabel: 'resultLabel',
-};
+const elements = require('../helpers/elements');
 
 const sum = async (number1, number2, driver) => {
     const leftTextField = await driver.waitForElementById(elements.leftTextField);

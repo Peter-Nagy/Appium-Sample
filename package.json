@@ -4,7 +4,8 @@
   "description": "Appium sample project in Node.js",
   "main": "index.js",
   "scripts": {
-    "test:android": "mocha ./tests --recursive --timeout 300000"
+    "test:android": "PLATFORM=android mocha ./tests --recursive --timeout 300000",
+    "test:ios": "PLATFORM=ios mocha ./tests --recursive --timeout 300000"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,9 @@
   "homepage": "https://github.com/Peter-Nagy/appiumSample#readme",
   "dependencies": {
     "chai": "^4.1.2",
+    "colors": "1.1.2",
     "chai-as-promised": "^7.1.1",
+    "express": "4.16.2",
     "mocha": "^4.0.1",
     "q": "^1.5.1",
     "underscore": "^1.8.3",

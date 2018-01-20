@@ -9,6 +9,10 @@ app.get('/app.apk', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../android/app.apk'));
 });
 
+app.get('/app.zip', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../ios/app.zip'));
+});
+
 let server;
 
 exports.start = async () => {

@@ -6,3 +6,12 @@ exports.android = {
   deviceName: '*',
   app: undefined, // will be set later
 };
+
+exports.ios = {
+  platformName: 'iOS',
+  platformVersion: '11.2',
+  deviceName: 'iPhone 8 Plus',
+  useNewWDA: true,
+  showXcodeLog: true,
+  autoAcceptAlerts: true,
+}
